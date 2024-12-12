@@ -44,7 +44,10 @@ svg {
 
 .pege-headr {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 
 .container {
   max-width: 1158px;
@@ -87,7 +90,8 @@ color: rgba(46, 47, 66, 1)
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455; 
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .header-container {
@@ -114,7 +118,8 @@ color: rgba(46, 47, 66, 1)
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding: 24px 0;  
+  padding: 24px 0; 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .studio-line {
@@ -125,8 +130,15 @@ color: rgba(46, 47, 66, 1)
   color: #2e2f42;
   padding: 24px 0;
   position: relative;
+
+}
+
+.studio-line {
+  position: relative;
+  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+
 
 .studio-line::after {
   content: "";
@@ -173,11 +185,9 @@ color: rgba(46, 47, 66, 1)
 /*--------- Section-one -------*/
 
 .section-one {
-  background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ),
-  url(../images/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+  url(/images/people-office.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -494,6 +504,12 @@ color: rgba(46, 47, 66, 1)
 .portfolio-item:hover .text-p {
     transform: translateY(0%);
 }
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 /*---------- Footer -------*/
 
